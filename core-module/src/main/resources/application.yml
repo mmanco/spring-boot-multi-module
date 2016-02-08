@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+          dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+          hbm2ddl.auto: validate
+          show_sql: false
+          format_sql: false
+          use_sql_comments: false                    
+  datasource:
+    url: jdbc:mysql://localhost/sbmm
+    username: sbmm
+    password: sbmm
+liquibase:
+  change-log: classpath:/db/changelog/master.xml
