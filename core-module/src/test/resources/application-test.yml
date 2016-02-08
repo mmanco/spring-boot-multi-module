@@ -2,14 +2,6 @@ spring:
   jpa:
     properties:
       hibernate:
-          dialect: org.hibernate.dialect.HSQLDialect
-          hbm2ddl.auto: validate
-          show_sql: false
-          format_sql: false
-          use_sql_comments: false                    
+          dialect: org.hibernate.dialect.HSQLDialect                   
   datasource:
     url: jdbc:hsqldb:mem:sbmm
-    username: sbmm
-    password: ''
-liquibase:
-  change-log: classpath:/db/changelog/master.xml
