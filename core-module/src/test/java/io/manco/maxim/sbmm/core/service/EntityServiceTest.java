@@ -35,13 +35,13 @@ public class EntityServiceTest {
 	public void find() {
 		Long id = 1L;
 		service.find(id);
-		verify(repository).save(repository.findOne(id));
+		verify(repository).findOne(id);
 	}
 	
 	@Test
 	public void findAll() {
 		service.findAll();
-		verify(repository).save(repository.findAll());		
+		verify(repository).findAll();		
 	}
 	
 }
