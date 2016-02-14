@@ -14,7 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Rollback
 @Transactional
 @IntegrationTest
-@ActiveProfiles("test")
+@ActiveProfiles({"core", "core-test"})
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(CoreApplication.class)
 @TestExecutionListeners(TransactionalTestExecutionListener.class)
