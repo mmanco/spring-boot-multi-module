@@ -1,0 +1,9 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+          dialect: org.hibernate.dialect.MySQL5InnoDBDialect                   
+  datasource:
+    url: jdbc:mysql://localhost/sbmm
+    username: sbmm
+    password: sbmm
