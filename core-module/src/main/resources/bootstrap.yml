@@ -1,0 +1,2 @@
+encrypt:
+  key: shouldBeSetAsEnvironmentVariable # as ENCRYPT_KEY

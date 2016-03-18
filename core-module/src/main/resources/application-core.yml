@@ -1,6 +1,6 @@
 spring:
   profiles:
-    include: core-hsqldb
+    include: native
   jpa:
     properties:
       hibernate:
@@ -10,3 +10,28 @@ spring:
           use_sql_comments: false
 liquibase:
   change-log: classpath:/db/changelog/master.xml
+
+encrypted: '{cipher}ba97b621a325ca8dbcfcb29a3a1ce7e7193335736dbdb1500a89668ad5d593bb8b9a405ef1cee6ac3d46645cecd1ef14'  
+---
+
+spring:
+  profiles: core,hsqldb
+  jpa:
+    properties:
+      hibernate:
+          dialect: org.hibernate.dialect.HSQLDialect                   
+  datasource:
+    url: jdbc:hsqldb:mem:sbmm   
+ 
+---
+
+spring:
+  profiles: mysql
+  jpa:
+    properties:
+      hibernate:
+          dialect: org.hibernate.dialect.MySQL5InnoDBDialect                   
+  datasource:
+    url: jdbc:mysql://localhost/sbmm
+    username: sbmm
+    password: sbmm  

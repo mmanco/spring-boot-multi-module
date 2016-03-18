@@ -11,5 +11,5 @@ public interface EntityService {
 	MyEntity find(Long id);
 	
 	Collection<MyEntity> findAll();
-	
+
 }
