@@ -1,7 +1,4 @@
 spring:
-  profiles:
-    include:
-      - core
   data:
     rest:
       max-page-size: 20
