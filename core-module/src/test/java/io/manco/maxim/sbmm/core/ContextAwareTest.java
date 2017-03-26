@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Rollback
 @Transactional
-@ActiveProfiles({"embeddeddb"})
+@ActiveProfiles({"core","embeddeddb"})
 @RunWith(SpringJUnit4ClassRunner.class)
 @TestExecutionListeners(TransactionalTestExecutionListener.class)
 @SpringBootTest(webEnvironment = WebEnvironment.NONE, classes = CoreApplication.class)
