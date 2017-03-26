@@ -8,10 +8,10 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.3.2.RELEASE</version>
+		<version>1.5.2.RELEASE</version>
 	</parent>
 	<properties>
-		<java.version>1.7</java.version>
+		<java.version>1.8</java.version>
 	</properties>
 	<modules>
 		<module>core-module</module>

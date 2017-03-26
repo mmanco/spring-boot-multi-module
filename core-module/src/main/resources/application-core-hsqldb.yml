@@ -1,7 +1,0 @@
-spring:
-  jpa:
-    properties:
-      hibernate:
-          dialect: org.hibernate.dialect.HSQLDialect                   
-  datasource:
-    url: jdbc:hsqldb:mem:sbmm

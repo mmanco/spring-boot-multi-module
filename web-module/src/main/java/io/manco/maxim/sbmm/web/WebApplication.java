@@ -11,9 +11,8 @@ public class WebApplication {
 
 	public static void main(String[] args) {
 		new SpringApplicationBuilder()
-			.parent(CoreApplication.class)
-			.child(WebApplication.class)
 			.bannerMode(Banner.Mode.CONSOLE)
+			.sources(CoreApplication.class, WebApplication.class)
 			.run(args);
 	}
 
